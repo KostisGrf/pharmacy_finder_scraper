@@ -64,6 +64,10 @@ async function getPharmacies (lon,lat){
 
 const app=express();
 
+app.get('/',(req,res)=>{
+    res.send("hello world");
+})
+
 app.get('/api/pharmacy-duties',async (req,res)=>{
     try{
         const lon=req.query.lon;
