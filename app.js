@@ -9,7 +9,7 @@ async function getPharmacies (lon,lat){
         const res=await axios({
             method:"PUT",
             url:siteUrl,
-            headers:{
+            headers:{'Cookie':'ASP.NET_SessionId=3j0ketczuzyz2rent0qh2rfp',
                 'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36'}
     })
 
