@@ -5,7 +5,7 @@ const express=require('express');
 async function getPharmacies (lon,lat){
     try {
         // const siteUrl=`https://www.vrisko.gr/en/pharmacy-duties/near-me/?lon=${lon}&lat=${lat}`;
-        const siteUrl='https://www.derivative-calculator.net/'
+        const siteUrl='https://www.xo.gr/efimerevonta-farmakeia/thessaloniki/'
         const res=await axios({
             method:"PUT",
             url:siteUrl,
