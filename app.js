@@ -4,7 +4,8 @@ const express=require('express');
 
 async function getPharmacies (lon,lat){
     try {
-        const siteUrl=`https://www.vrisko.gr/en/pharmacy-duties/near-me/?lon=${lon}&lat=${lat}`;
+        // const siteUrl=`https://www.vrisko.gr/en/pharmacy-duties/near-me/?lon=${lon}&lat=${lat}`;
+        const siteUrl='https://www.vrisko.gr/'
         const res=await axios({
             method:"GET",
             url:siteUrl,
@@ -54,7 +55,7 @@ async function getPharmacies (lon,lat){
     for(let i=0;i<=titlelist.length-1;i++){
         results.push({'title':titlelist[i],'phone':phonelist[i],'onDutyHours':onDutyHourslist[i],'vicinity':vicinitylist[i],'onDutyNow':titlelist.length<1?onDutyNowlist[i]:i<2?onDutyNowlist[i]:onDutyNowlist[i+1]})
     }
-    return results;    
+    return res.data;    
     
     } catch (error) {
         console.error(error)
