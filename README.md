@@ -36,5 +36,5 @@ To start the express server, run the following
 node app.js
 ```
 
-Open http://localhost:3000/api/pharmacy-dutiesapi/pharmacy-duties?lon=$lng&lat=$lat' and take a look around,
+Open http://localhost:3000/api/pharmacy-duties?lon=$lng&lat=$lat' and take a look around,
 replace $lng and $lat with real numbers for example 40.6401 and 22.9444
